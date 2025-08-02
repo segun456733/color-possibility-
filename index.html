@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Palette App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Login Form -->
+<div class="container1" id="loginContainer">
+  <div class="best">
+    <h1>Login</h1>
+    <div class="look">
+      <input type="text" name="name" placeholder="name" />
+      <div class="password-wrapper">
+        <input type="password" name="password" placeholder="password" id="passwordInput" readonly />
+        <span id="togglePassword" class="eye-icon">👁</span>
+      </div>
+    </div>
+
+    <div class="form-error" id="loginError"></div>
+
+    <div style="margin-top: 10px; text-align: center;">
+      <label>
+        <input type="checkbox" id="editToggle" />
+        Allow editing password
+      </label>
+    </div>
+
+    <div class="bay">
+      Reminds me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#" id="forgotPassword">forgot password</a>
+    </div>
+    <p class="just"><button class="mer">Login</button></p>
+    <div class="rty">don't have an account? <a href="#">sign up</a></div>
+  </div>
+</div>
+
+<!-- Sign Up Form -->
+<div class="container2" id="signupContainer">
+  <div class="best2">
+    <h1>Sign Up</h1>
+    <div class="look2">
+      <input type="text" name="firstname" placeholder="First name" />
+      <input type="text" name="lastname" placeholder="Last name" />
+      <input type="password" name="password" placeholder="Password" />
+      <input type="password" name="confirm password" placeholder="Confirm password" />
+    </div>
+
+    <div class="form-error" id="signupError"></div>
+
+    <p class="just2"><button class="mer2">Sign Up</button></p>
+    <div class="rty2">Already have an account? <a href="#">Login</a></div>
+  </div>
+</div>
+
+<!-- Welcome Animation -->
+<div class="container3" id="animationContainer">
+  <div class="animation">
+    <div id="wrapper">
+      <h1>Welcome to color palette generator</h1>
+      <div class="book">
+        <p>This is where you find an amazing color palette. 
+        It offers a stunning combination of tones and shades that spark creativity and enhance any design.</p>
+      </div> 
+    </div>
+    <div class="card"></div>
+  </div>
+</div>
+
+<!-- Palette Generator -->
+<div class="container" id="paletteContainer">
+  <div class="wrapper">
+    <div class="common">
+      <div class="alert-div">
+        <p>#ffffff copied to your clipboard</p>
+      </div>
+      <section class="section1">
+        <h1>Color Palette Generator</h1>
+        <div class="colors">
+          <div class="color"><div class="color-img"><button class="copy">Copy</button></div><div class="color-text">#ffffff</div><input type="color" /></div>
+          <div class="color"><div class="color-img"><button class="copy">Copy</button></div><div class="color-text">#ffffff</div><input type="color" /></div>
+          <div class="color"><div class="color-img"><button class="copy">Copy</button></div><div class="color-text">#ffffff</div><input type="color" /></div>
+          <div class="color"><div class="color-img"><button class="copy">Copy</button></div><div class="color-text">#ffffff</div><input type="color" /></div>
+          <div class="color"><div class="color-img"><button class="copy">Copy</button></div><div class="color-text">#ffffff</div><input type="color" /></div>
+        </div>
+      </section>
+      <section class="section2">
+        <button class="btn" id="generateBtn">Generate Palette</button>
+        <p>or just press the "spacebar" to generate a new palette.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<audio id="copySound" src="cope/copy-sound.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
